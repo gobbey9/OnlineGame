@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectHorizon", "ProjectHorizon.csproj", "{FE95DB98-6019-4258-B784-8B640AA81CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorizonServer", "..\HorizonServer\HorizonServer.csproj", "{39306848-0FC3-4C50-AD26-C20C66B7BEBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FE95DB98-6019-4258-B784-8B640AA81CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE95DB98-6019-4258-B784-8B640AA81CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE95DB98-6019-4258-B784-8B640AA81CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39306848-0FC3-4C50-AD26-C20C66B7BEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39306848-0FC3-4C50-AD26-C20C66B7BEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39306848-0FC3-4C50-AD26-C20C66B7BEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39306848-0FC3-4C50-AD26-C20C66B7BEBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
