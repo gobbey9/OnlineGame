@@ -18,16 +18,16 @@ using System.Windows.Shapes;
 
 namespace ProjectHorizon
 {
-   /// <summary>
-   /// Interaction logic for MainWindow.xaml
-   /// </summary>
-   public partial class MainWindow : Window
-   {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
         private static Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-      public MainWindow()
-      {
-         InitializeComponent();
-      }
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
 
 
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
@@ -58,7 +58,7 @@ namespace ProjectHorizon
             int receive = clientSocket.Receive(recBuffer);
             byte[] data = new byte[receive];
             Array.Copy(recBuffer, data, receive);
-            Console.WriteLine("Received: " + Encoding.ASCII.GetString(data));
+            //Console.WriteLine("Received: " + Encoding.ASCII.GetString(data));
             TextBlockOutput.Text = "Received: " + Encoding.ASCII.GetString(data);
         }
 
