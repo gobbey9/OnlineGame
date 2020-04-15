@@ -52,14 +52,15 @@ namespace ProjectHorizon
 
         private void SendServer(string text)
         {
+            text = text + "\n";
             byte[] buffer = Encoding.ASCII.GetBytes(text);
             clientSocket.Send(buffer);
-            byte[] recBuffer = new byte[4096];
+            byte[] recBuffer = new byte[14096];
             int receive = clientSocket.Receive(recBuffer);
             byte[] data = new byte[receive];
             Array.Copy(recBuffer, data, receive);
             //Console.WriteLine("Received: " + Encoding.ASCII.GetString(data));
-            TextBlockOutput.Text = "Received: " + Encoding.ASCII.GetString(data) + "\n";
+            TextBlockOutput.Text = TextBlockOutput.Text + "Received: " + Encoding.ASCII.GetString(data) + "\n";
         }
 
         private void ReceiveCallback(IAsyncResult AR)
