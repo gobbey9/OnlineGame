@@ -10,6 +10,9 @@
         <Button x:Name="LoginTestButton" Content="Login" HorizontalAlignment="Left" Height="41" Margin="10,70,0,0" VerticalAlignment="Top" Width="164" Click="ButtonLogin_Click"/>
         <TextBox x:Name="TextBoxIP" HorizontalAlignment="Left" Height="26" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please enter IP address" VerticalAlignment="Top" Width="224"/>
         <TextBox x:Name="TextBoxUserName" HorizontalAlignment="Left" Height="24" Margin="10,41,0,0" TextWrapping="Wrap" Text="Please enter your username" VerticalAlignment="Top" Width="224"/>
+        <TextBlock x:Name="TextBlockOutput" HorizontalAlignment="Left" Height="293" Margin="10,116,0,0" TextWrapping="Wrap" Text="Output will show up here!" VerticalAlignment="Top" Width="772"/>
+        <Button x:Name="ButtonSendCommand" Content="Send Command" HorizontalAlignment="Left" Height="41" Margin="179,70,0,0" VerticalAlignment="Top" Width="164" Click="ButtonSendCommand_Click"/>
+        <TextBox x:Name="TextBoxCommands" HorizontalAlignment="Left" Height="24" Margin="239,41,0,0" TextWrapping="Wrap" Text="Enter commands here" VerticalAlignment="Top" Width="451"/>
 
     </Grid>
 </Window>

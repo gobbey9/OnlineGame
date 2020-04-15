@@ -46,7 +46,7 @@ namespace ProjectHorizon
                     return;
                 }
             //}
-            Thread.Sleep(100);
+            //Thread.Sleep(100);
             SendServer("login " + TextBoxUserName.Text + " ServerTestPasswordOne\n");
         }
 
@@ -59,6 +59,7 @@ namespace ProjectHorizon
             byte[] data = new byte[receive];
             Array.Copy(recBuffer, data, receive);
             Console.WriteLine("Received: " + Encoding.ASCII.GetString(data));
+            TextBlockOutput.Text = "Received: " + Encoding.ASCII.GetString(data);
         }
 
         private void ReceiveCallback(IAsyncResult AR)
@@ -77,5 +78,9 @@ namespace ProjectHorizon
             //socket.BeginReceive(buffer, 0, buffer.Length, SocketFlags.None, new AsyncCallback(ReceiveCallback), socket);
         }
 
+        private void ButtonSendCommand_Click(object sender, RoutedEventArgs e)
+        {
+            SendServer(TextBoxCommands.Text);
+        }
     }
 }
